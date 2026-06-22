@@ -10,7 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 function SpiderMan() {
 
-  const { scene } = useGLTF("/models/spiderman.glb");
+ const model = useGLTF("/models/spiderman.glb");
+
+console.log(model);
+console.log("scene:", model.scene);
 
   const modelRef = useRef<Group>(null);
 
@@ -160,16 +163,18 @@ function SpiderMan() {
       ) * 0.15;
 
   });
+   if (!model.scene) {
+  console.error("GLTF loaded but scene is missing:", model);
+  return null;
+}
 
-  return (
-
-    <primitive
-      ref={modelRef}
-      object={scene}
-      scale={68}
-    />
-
-  );
+return (
+  <primitive
+    ref={modelRef}
+    object={model.scene}
+    scale={68}
+  />
+);
 
 }
 
