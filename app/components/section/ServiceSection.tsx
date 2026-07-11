@@ -26,7 +26,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="inline-block rounded-full border border-orange-500/20 bg-orange-500/5 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-orange-400"
+          className="inline-block rounded-full border border-orange-500/20 bg-orange-500/5 px-5 py-2 text-sm font-bold uppercase tracking-[0.25em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
         >
           SERVICES
         </motion.p>
@@ -36,11 +36,9 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="mt-10 max-w-5xl text-4xl sm:text-6xl lg:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.06em]"
+          className="mt-10 max-w-5xl text-4xl sm:text-6xl lg:text-[7vw] font-black uppercase leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]"
         >
-
           Our Services
-
         </motion.h2>
 
         <motion.p
@@ -51,14 +49,12 @@ export default function ServicesSection() {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="mt-8 max-w-4xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/70"
+          className="mt-8 max-w-4xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
         >
-
           We create content for brands, businesses,
           creators, educators, and teams that want
           to communicate better, move faster,
           and scale smarter.
-
         </motion.p>
 
       </div>
@@ -89,30 +85,24 @@ export default function ServicesSection() {
 
                 </div>
 
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+                <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-300">
                   SERVICE 01
-
                 </p>
 
               </div>
 
               <h3 className="mt-6 sm:mt-10 text-3xl sm:text-5xl lg:text-6xl font-black leading-none transition duration-500 group-hover:translate-x-2">
-
                 AI Filmmaking
-
               </h3>
 
-              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
                 Cinematic AI-powered films,
                 product videos, visual storytelling,
                 launch campaigns, branded reels,
                 and premium content systems.
-
               </p>
 
-              <div className="mt-6 sm:mt-12 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/75">
+              <div className="mt-6 sm:mt-12 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/85">
 
                 <div className="space-y-4">
 
@@ -156,30 +146,24 @@ export default function ServicesSection() {
 
                 </div>
 
-                <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+                <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-300">
                   SERVICE 02
-
                 </p>
 
               </div>
 
               <h3 className="mt-6 sm:mt-10 text-3xl sm:text-5xl lg:text-6xl font-black leading-none transition duration-500 group-hover:translate-x-2">
-
                 AI Ad Content
-
               </h3>
 
-              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
                 High-converting ad creatives,
                 launch campaigns, product ads,
                 platform-native content,
                 and marketing assets.
-
               </p>
 
-              <div className="mt-6 sm:mt-12 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/75">
+              <div className="mt-6 sm:mt-12 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/85">
 
                 <div className="space-y-4">
 
@@ -225,27 +209,21 @@ export default function ServicesSection() {
 
               </div>
 
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-300">
                 SERVICE 03
-
               </p>
 
             </div>
 
             <h3 className="mt-6 sm:mt-10 text-3xl sm:text-5xl lg:text-6xl font-black leading-none transition duration-500 group-hover:translate-x-2">
-
               Marketing Systems
-
             </h3>
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
               Content ecosystems,
               storytelling systems,
               campaign strategy,
               and scalable brand presence.
-
             </p>
 
           </motion.div>
@@ -270,29 +248,23 @@ export default function ServicesSection() {
 
               </div>
 
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+              <p className="text-sm font-bold uppercase tracking-[0.25em] text-orange-300">
                 SERVICE 04
-
               </p>
 
             </div>
 
             <h3 className="mt-6 sm:mt-10 text-3xl sm:text-5xl lg:text-6xl font-black leading-none transition duration-500 group-hover:translate-x-2">
-
               Agentic AI
               <br />
               Production
-
             </h3>
 
-            <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+            <p className="mt-4 sm:mt-6 lg:mt-8 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
               Personalized AI production
               workflows designed around
               company goals, audiences,
               products, and brand systems.
-
             </p>
 
           </motion.div>
@@ -319,35 +291,29 @@ export default function ServicesSection() {
 
               </div>
 
-              <p className="mt-8 text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+              <p className="mt-8 text-sm font-bold uppercase tracking-[0.25em] text-orange-300">
                 SERVICE 05
-
               </p>
 
               <h3 className="mt-6 sm:mt-10 text-3xl sm:text-5xl lg:text-6xl font-black leading-none transition duration-500 group-hover:translate-x-2">
-
                 Adult Learning
                 <br />
                 Experiences
-
               </h3>
 
             </div>
 
             <div className="max-w-2xl">
 
-              <p className="text-sm sm:text-base lg:text-xl leading-relaxed text-white/70">
-
+              <p className="text-sm sm:text-base lg:text-xl leading-relaxed text-white/85">
                 AI-assisted learning systems,
                 instructional design,
                 onboarding experiences,
                 corporate learning,
                 and cinematic educational content.
-
               </p>
 
-              <div className="mt-6 sm:mt-10 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/75">
+              <div className="mt-6 sm:mt-10 grid grid-cols-2 gap-5 text-xs sm:text-sm lg:text-base text-white/85">
 
                 <div className="space-y-4">
 

@@ -45,30 +45,24 @@ export default function ReviewsSection() {
         className="max-w-6xl"
       >
 
-        <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400">
-
+        <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
           TRUSTED EXPERIENCE
-
         </p>
 
-        <h2 className="text-4xl sm:text-6xl lg:text-[7vw] font-black leading-[0.9] tracking-[-0.06em]">
-
+        <h2 className="text-4xl sm:text-6xl lg:text-[7vw] font-black leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
           BUILT FOR
           <br />
           MODERN TEAMS
           <br />
           WITH AMBITION.
-
         </h2>
 
-        <p className="mt-6 sm:mt-10 max-w-3xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/65">
-
+        <p className="mt-6 sm:mt-10 max-w-3xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
           THUK.Studio collaborates with founders,
           educators, creators, and modern businesses
           to build cinematic AI experiences,
           scalable content systems, and high-impact
           creative production.
-
         </p>
 
       </motion.div>
@@ -101,10 +95,8 @@ export default function ReviewsSection() {
             </div>
 
             {/* REVIEW */}
-            <p className="relative z-10 text-sm sm:text-base lg:text-lg leading-relaxed text-white/75">
-
+            <p className="relative z-10 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
               {item.review}
-
             </p>
 
             {/* LINE */}
@@ -113,16 +105,12 @@ export default function ReviewsSection() {
             {/* USER */}
             <div className="mt-4 sm:mt-8">
 
-              <h4 className="text-lg sm:text-xl font-bold">
-
+              <h4 className="text-lg sm:text-xl font-extrabold">
                 {item.name}
-
               </h4>
 
-              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-orange-300/80">
-
+              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-orange-300/90">
                 {item.role}
-
               </p>
 
             </div>
@@ -146,9 +134,7 @@ export default function ReviewsSection() {
       >
 
         <p className="text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.45em] text-white/30">
-
           CINEMATIC AI SYSTEMS • CREATIVE AUTOMATION • VISUAL STORYTELLING
-
         </p>
 
       </motion.div>

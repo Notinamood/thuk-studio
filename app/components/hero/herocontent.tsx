@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 
-
 export default function HeroContent() {
   const ScrollToSection = (id:string)=>{
     document.getElementById(id)?.scrollIntoView({behavior:"smooth",block:"start"})
@@ -32,7 +31,7 @@ export default function HeroContent() {
             ease: [0.76, 0, 0.24, 1],
             delay: 0.5,
           }}
-          className="absolute text-[100px] sm:text-[150px] lg:text-[220px] font-black tracking-tight"
+          className="absolute text-[100px] sm:text-[150px] lg:text-[220px] font-black tracking-tight drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]"
         >
           TH
         </motion.h1>
@@ -54,7 +53,7 @@ export default function HeroContent() {
             ease: [0.76, 0, 0.24, 1],
             delay: 0.5,
           }}
-          className="absolute text-[100px] sm:text-[150px] lg:text-[220px] font-black tracking-tight"
+          className="absolute text-[100px] sm:text-[150px] lg:text-[220px] font-black tracking-tight drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]"
         >
           UK
         </motion.h1>
@@ -73,16 +72,15 @@ export default function HeroContent() {
           }}
           className="flex w-full lg:w-1/2 flex-col justify-center px-6 sm:px-12 lg:px-24"
         >
-
-          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-orange-400">
+          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             THE HUB OF UNLIMITED KREATIVITY
           </p>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
             AI-Powered Creative Systems
           </h2>
 
-          <p className="mt-6 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
+          <p className="mt-6 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             THUK.Studio helps brands, companies, creators,
             and educators turn ideas into high-quality
             AI-powered films, ad content, marketing assets,

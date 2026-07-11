@@ -45,26 +45,22 @@ export default function ShowcaseSection() {
         className="max-w-5xl"
       >
 
-        <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400">
+        <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
           SHOWCASE
         </p>
 
-        <h2 className="text-4xl sm:text-6xl lg:text-[7vw] font-black leading-[0.9] tracking-[-0.06em]">
-
+        <h2 className="text-4xl sm:text-6xl lg:text-[7vw] font-black leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
           CREATIVE
           <br />
           SYSTEMS
           <br />
           IN MOTION.
-
         </h2>
 
-        <p className="mt-6 sm:mt-10 max-w-3xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/70">
-
+        <p className="mt-6 sm:mt-10 max-w-3xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
           A glimpse into the cinematic AI workflows,
           visual systems, campaign structures, and
           production experiences built by THUK.Studio.
-
         </p>
 
       </motion.div>
@@ -111,22 +107,16 @@ export default function ShowcaseSection() {
               }`}
             >
 
-              <p className="text-sm uppercase tracking-[0.3em] text-orange-400">
-
+              <p className="text-sm uppercase tracking-[0.3em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                 {project.category}
-
               </p>
 
-              <h3 className="mt-3 sm:mt-5 text-2xl sm:text-4xl lg:text-5xl font-black leading-tight">
-
+              <h3 className="mt-3 sm:mt-5 text-2xl sm:text-4xl lg:text-5xl font-black leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                 {project.title}
-
               </h3>
 
-              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+              <p className="mt-4 sm:mt-6 lg:mt-8 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                 {project.desc}
-
               </p>
 
               <button className="mt-6 sm:mt-8 lg:mt-10 rounded-full border border-white/15 px-8 py-4 transition duration-500 hover:border-orange-400 hover:bg-orange-500 hover:text-black">

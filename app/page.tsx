@@ -19,6 +19,7 @@ import { useEffect, useRef } from "react";
 
 
 
+
 export default function Home() {
 const orangeRef = useRef<HTMLDivElement>(null);
 const redRef = useRef<HTMLDivElement>(null);
@@ -78,6 +79,8 @@ useEffect(() => {
      <BlackIntro />
 
      <SmoothScroll />
+
+  
 
      <Character/>
 

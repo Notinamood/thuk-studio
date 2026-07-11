@@ -5,6 +5,8 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -26,24 +28,25 @@ export default function Footer() {
           {/* LOGO */}
           <div className="flex items-center gap-5">
 
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-500 text-3xl font-black text-black shadow-[0_0_40px_rgba(255,140,0,0.35)]">
-
-              TH
-
-            </div>
+            <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl">
+  <Image
+    src="/assets/mark.png"
+    alt="THUK Studio"
+    width={64}
+    height={64}
+    className="h-full w-full object-contain"
+    priority
+  />
+</div>
 
             <div>
 
-              <h2 className="text-3xl font-black tracking-tight">
-
+              <h2 className="text-3xl font-black tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                 THUK.Studio
-
               </h2>
 
-              <p className="mt-1 text-sm uppercase tracking-[0.25em] text-orange-300/70">
-
+              <p className="mt-1 text-sm uppercase tracking-[0.25em] text-orange-300/85">
                 THE HUB OF UNLIMITED KREATIVITY
-
               </p>
 
             </div>
@@ -51,14 +54,12 @@ export default function Footer() {
           </div>
 
           {/* DESCRIPTION */}
-          <p className="mt-6 sm:mt-10 max-w-md text-sm sm:text-base lg:text-lg leading-relaxed text-white/60">
-
+          <p className="mt-6 sm:mt-10 max-w-md text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
             THUK.Studio builds cinematic AI systems,
             premium visual storytelling,
             creative automation workflows,
             and scalable content experiences
             for modern brands and creators.
-
           </p>
 
         </div>
@@ -66,10 +67,8 @@ export default function Footer() {
         {/* CENTER */}
         <div>
 
-          <p className="mb-4 sm:mb-8 text-sm font-semibold uppercase tracking-[0.35em] text-orange-300">
-
+          <p className="mb-4 sm:mb-8 text-sm font-bold uppercase tracking-[0.35em] text-orange-300">
             SERVICES
-
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -85,7 +84,7 @@ export default function Footer() {
 
               <div
                 key={index}
-                className="rounded-2xl border border-white/10 bg-white/3 px-4 py-2 sm:px-5 sm:py-3 text-xs sm:text-sm font-semibold text-white/70 transition duration-300 hover:border-orange-400/40 hover:bg-orange-500/10 hover:text-white"
+                className="rounded-2xl border border-white/10 bg-white/3 px-4 py-2 sm:px-5 sm:py-3 text-xs sm:text-sm font-bold text-white/85 transition duration-300 hover:border-orange-400/40 hover:bg-orange-500/10 hover:text-white"
               >
 
                 {item}
@@ -101,10 +100,8 @@ export default function Footer() {
         {/* RIGHT */}
         <div>
 
-          <p className="mb-4 sm:mb-8 text-sm font-semibold uppercase tracking-[0.35em] text-orange-300">
-
+          <p className="mb-4 sm:mb-8 text-sm font-bold uppercase tracking-[0.35em] text-orange-300">
             CONTACT
-
           </p>
 
           <div className="space-y-6">
@@ -118,10 +115,8 @@ export default function Footer() {
 
               </div>
 
-              <p className="text-sm sm:text-base lg:text-lg text-white/70">
-
+              <p className="text-sm sm:text-base lg:text-lg text-white/85">
                 +91 7439430174
-
               </p>
 
             </div>
@@ -135,10 +130,8 @@ export default function Footer() {
 
               </div>
 
-              <p className="text-sm sm:text-base lg:text-lg text-white/70">
-
+              <p className="text-sm sm:text-base lg:text-lg text-white/85">
                 hello@thuk.studio
-
               </p>
 
             </div>
@@ -152,10 +145,8 @@ export default function Footer() {
 
               </div>
 
-              <p className="text-sm sm:text-base lg:text-lg text-white/70">
-
+              <p className="text-sm sm:text-base lg:text-lg text-white/85">
                 Kolkata, India
-
               </p>
 
             </div>
@@ -170,15 +161,37 @@ export default function Footer() {
       <div className="relative z-10 mt-12 lg:mt-24 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-10 text-center lg:flex-row">
 
         <p className="text-white/35">
-
           © 2026 THUK.Studio. All rights reserved.
-
         </p>
 
+        <div className="flex items-center gap-6 text-xs sm:text-sm uppercase tracking-[0.2em]">
+          <Link
+            href="/career"
+            className="group
+                      mx-auto
+                      mt-8
+                      flex
+                      flex-col
+                      items-center
+                      rounded-2xl
+                      border
+                      border-orange-500/30
+                      bg-white/5
+                      px-8
+                      py-5
+                      backdrop-blur-md
+                      transition-all
+                      duration-300
+                      hover:border-orange-400
+                      hover:bg-orange-500/10
+                      hover:scale-105 sm:text-2xl font-black uppercase tracking-[0.2em] text-white hover:text-orange-400 cursor-pointer"
+          >
+            Career
+          </Link>
+        </div>
+
         <p className="text-xs sm:text-sm uppercase tracking-[0.15em] sm:tracking-[0.3em] text-white/20">
-
           DESIGNED FOR CINEMATIC AI STORYTELLING
-
         </p>
 
       </div>

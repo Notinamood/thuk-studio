@@ -43,11 +43,11 @@ export default function StatsShowcase() {
           className="w-full lg:max-w-2xl"
         >
 
-          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400">
+          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             WHY THUK
           </p>
 
-          <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.06em]">
+          <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
 
             CREATE
             <br />
@@ -59,7 +59,7 @@ export default function StatsShowcase() {
 
           </h2>
 
-          <p className="mt-6 sm:mt-10 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
+          <p className="mt-6 sm:mt-10 max-w-xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
 
             THUK.Studio combines cinematic storytelling,
             AI production systems, marketing strategy,
@@ -88,21 +88,21 @@ export default function StatsShowcase() {
             >
 
               {/* NUMBER */}
-              <h3 className="text-5xl sm:text-7xl lg:text-[96px] font-black leading-none tracking-[-0.06em] text-orange-400">
+              <h3 className="text-5xl sm:text-7xl lg:text-[96px] font-black leading-none tracking-[-0.06em] text-orange-400 drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
 
                 {item.number}
 
               </h3>
 
               {/* TITLE */}
-              <h4 className="mt-5 text-xl sm:text-2xl lg:text-3xl font-bold">
+              <h4 className="mt-5 text-xl sm:text-2xl lg:text-3xl font-extrabold drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
 
                 {item.title}
 
               </h4>
 
               {/* DESC */}
-              <p className="mt-3 sm:mt-5 text-sm sm:text-base leading-relaxed text-white/70">
+              <p className="mt-3 sm:mt-5 text-sm sm:text-base leading-relaxed text-white/85">
 
                 {item.desc}
 

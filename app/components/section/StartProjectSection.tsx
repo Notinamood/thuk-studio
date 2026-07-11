@@ -33,14 +33,11 @@ export default function StartProjectSection() {
             className="relative z-10 p-6 sm:p-10 lg:p-16"
           >
 
-            <p className="mb-6 inline-block rounded-full border border-orange-500/30 bg-orange-500/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-orange-300">
-
+            <p className="mb-6 inline-block rounded-full border border-orange-500/30 bg-orange-500/10 px-6 py-3 text-sm font-bold uppercase tracking-[0.25em] text-orange-300 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
               START A PROJECT
-
             </p>
 
-            <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black leading-[0.92] tracking-[-0.06em]">
-
+            <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black leading-[0.92] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
               Have an idea ?
               <br />
               Let&apos;s SPIT it into
@@ -48,18 +45,15 @@ export default function StartProjectSection() {
               Reality. Let us take
               <br />
               care of the rest!
-
             </h2>
 
-            <p className="mt-6 sm:mt-10 max-w-xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/65">
-
+            <p className="mt-6 sm:mt-10 max-w-xl text-sm sm:text-base lg:text-xl leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
               Whether you need AI films,
               cinematic ads, content systems,
               agentic AI workflows, or learning
               experiences — THUK.Studio helps
               transform ideas into scalable,
               high-impact creative execution.
-
             </p>
 
             {/* CONTACT INFO */}
@@ -76,16 +70,12 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-
+                  <p className="text-sm uppercase tracking-[0.2em] text-white/60">
                     PHONE
-
                   </p>
 
-                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-semibold">
-
+                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-bold">
                     +91 7439430174
-
                   </h4>
 
                 </div>
@@ -103,16 +93,12 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-
+                  <p className="text-sm uppercase tracking-[0.2em] text-white/60">
                     EMAIL
-
                   </p>
 
-                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-semibold">
-
+                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-bold">
                     hello@thuk.studio
-
                   </h4>
 
                 </div>
@@ -130,16 +116,12 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <p className="text-sm uppercase tracking-[0.2em] text-white/40">
-
+                  <p className="text-sm uppercase tracking-[0.2em] text-white/60">
                     ADDRESS
-
                   </p>
 
-                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-semibold">
-
+                  <h4 className="mt-1 text-sm sm:text-lg lg:text-xl font-bold">
                     Kolkata, India
-
                   </h4>
 
                 </div>
@@ -165,10 +147,8 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-
+                  <label className="mb-3 block text-sm font-bold uppercase tracking-[0.2em] text-white/85">
                     Name
-
                   </label>
 
                   <input
@@ -181,10 +161,8 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-
+                  <label className="mb-3 block text-sm font-bold uppercase tracking-[0.2em] text-white/85">
                     Email
-
                   </label>
 
                   <input
@@ -201,10 +179,8 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-
+                  <label className="mb-3 block text-sm font-bold uppercase tracking-[0.2em] text-white/85">
                     Phone
-
                   </label>
 
                   <input
@@ -217,10 +193,8 @@ export default function StartProjectSection() {
 
                 <div>
 
-                  <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-
+                  <label className="mb-3 block text-sm font-bold uppercase tracking-[0.2em] text-white/85">
                     Project Type
-
                   </label>
 
                   <select className="h-14 sm:h-16 w-full rounded-2xl border border-white/10 bg-black/60 px-4 sm:px-6 text-base sm:text-lg outline-none transition focus:border-orange-400">
@@ -239,10 +213,8 @@ export default function StartProjectSection() {
 
               <div className="mt-6">
 
-                <label className="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-
+                <label className="mb-3 block text-sm font-bold uppercase tracking-[0.2em] text-white/85">
                   Project Brief
-
                 </label>
 
                 <textarea
@@ -262,9 +234,7 @@ export default function StartProjectSection() {
 
               {/* BOTTOM TEXT */}
               <p className="mt-6 text-center text-xs sm:text-sm uppercase tracking-[0.1em] sm:tracking-[0.2em] text-white/30">
-
                 CINEMATIC STORYTELLING • AI SYSTEMS • CREATIVE EXECUTION
-
               </p>
 
             </div>

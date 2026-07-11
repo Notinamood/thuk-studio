@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+
 const uspCards = [
   {
     id: "USP 01",
@@ -42,42 +43,32 @@ export default function AboutSection() {
           viewport={{ once: true }}
         >
 
-          <p className="mb-6 inline-block rounded-full border border-orange-400/20 bg-orange-500/10 px-5 py-2 text-sm uppercase tracking-[0.25em] text-orange-400">
-
+          <p className="mb-6 inline-block rounded-full border border-orange-400/20 bg-orange-500/10 px-5 py-2 text-sm uppercase tracking-[0.25em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             ABOUT
-
           </p>
 
-          <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.06em]">
-
+          <h2 className="text-4xl sm:text-6xl lg:text-[6vw] font-black uppercase leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
             About
             <br />
             THUK.Studio
-
           </h2>
 
-          <div className="mt-6 sm:mt-12 space-y-6 sm:space-y-10 text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+          <div className="mt-6 sm:mt-12 space-y-6 sm:space-y-10 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             <p>
-
               THUK.Studio is an AI-powered creative studio
               created to transform how content is imagined,
               designed, and produced.
-
             </p>
 
             <p>
-
               We believe great content starts with a powerful idea,
               but execution should not be slow, expensive,
               or complicated. That is why we use AI-assisted
               workflows to help brands move from idea to final
               output with speed, creativity, and consistency.
-
             </p>
 
             <p>
-
               Our work combines storytelling, AI filmmaking,
               visual design, marketing strategy, content production,
               agentic AI systems, and instructional design.
@@ -86,9 +77,7 @@ export default function AboutSection() {
               or an e-learning module,
               our goal is to create content that is clear,
               engaging, scalable, and memorable.
-
             </p>
-
           </div>
 
         </motion.div>
@@ -111,24 +100,18 @@ export default function AboutSection() {
             >
 
               {/* USP ID */}
-              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-orange-300">
-
+              <p className="mb-6 text-sm font-bold uppercase tracking-[0.2em] text-orange-300">
                 {card.id}
-
               </p>
 
               {/* TITLE */}
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
-
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
                 {card.title}
-
               </h3>
 
               {/* DESC */}
-              <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base lg:text-lg leading-relaxed text-white/85">
                 {card.desc}
-
               </p>
 
             </motion.div>

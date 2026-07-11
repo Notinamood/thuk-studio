@@ -24,7 +24,7 @@ export default function MovingStrip() {
         {[...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="mx-8 flex items-center text-sm font-semibold uppercase tracking-[0.25em] text-white/80"
+            className="mx-8 flex items-center text-sm font-bold uppercase tracking-[0.25em] text-white/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
           >
             <span>{item}</span>
 

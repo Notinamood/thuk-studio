@@ -60,27 +60,23 @@ export default function ServicesGrid() {
           viewport={{ once: true }}
         >
 
-          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400">
+          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-orange-400 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             WHAT WE CREATE
           </p>
 
-          <h2 className="text-4xl sm:text-6xl lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.06em]">
-
+          <h2 className="text-4xl sm:text-6xl lg:text-[5vw] font-black uppercase leading-[0.9] tracking-[-0.06em] drop-shadow-[0_5px_18px_rgba(0,0,0,0.45)]">
             ONE STUDIO.
             <br />
             MULTIPLE
             <br />
             AI SYSTEMS.
-
           </h2>
 
-          <p className="mt-6 sm:mt-10 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/70">
-
+          <p className="mt-6 sm:mt-10 max-w-2xl text-sm sm:text-base lg:text-lg leading-relaxed text-white/85 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
             THUK.Studio combines cinematic storytelling,
             AI filmmaking, marketing systems, agentic AI,
             and educational experiences into one connected
             creative ecosystem.
-
           </p>
 
         </motion.div>
@@ -115,19 +111,15 @@ export default function ServicesGrid() {
 
                   </div>
 
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">
-
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                     {service.title}
-
                   </h3>
 
                 </div>
 
                 {/* DESCRIPTION */}
-                <p className="mt-4 sm:mt-6 lg:mt-8 max-w-xl text-sm sm:text-base leading-relaxed text-white/70">
-
+                <p className="mt-4 sm:mt-6 lg:mt-8 max-w-xl text-sm sm:text-base leading-relaxed text-white/85">
                   {service.desc}
-
                 </p>
 
               </motion.div>

@@ -12,8 +12,8 @@ function SpiderMan() {
 
  const model = useGLTF("/models/spiderman.glb");
 
-console.log(model);
-console.log("scene:", model.scene);
+
+
 
   const modelRef = useRef<Group>(null);
 
@@ -146,7 +146,7 @@ console.log("scene:", model.scene);
     rotationY.current;
   
   currentX.current +=
-    (targetX.current - currentX.current) * 0.004;
+    (targetX.current - currentX.current) * 0.01;
 
     modelRef.current.position.x =
       currentX.current;
@@ -157,14 +157,14 @@ console.log("scene:", model.scene);
       currentZ.current;
    
     modelRef.current.position.y =
-      -7.9 +
+      -1 +
       Math.sin(
         state.clock.elapsedTime * 0.8
       ) * 0.15;
 
   });
    if (!model.scene) {
-  console.error("GLTF loaded but scene is missing:", model);
+  
   return null;
 }
 
@@ -172,7 +172,7 @@ return (
   <primitive
     ref={modelRef}
     object={model.scene}
-    scale={68}
+    scale={10}
   />
 );
 
@@ -208,25 +208,25 @@ function Scene() {
     <>
 
      
-      <ambientLight intensity={0.25} />
+      <ambientLight intensity={0.17} />
 
       
       <directionalLight
         position={[5, 5, 5]}
-        intensity={5}
+        intensity={3.5}
         color={"#ffffff"}
       />
 
      
       <directionalLight
         position={[-5, 2, -5]}
-        intensity={2.5}
+        intensity={1.75}
         color={"#3b82f6"}
       />
 
       <pointLight
         position={[0, -2, 3]}
-        intensity={8}
+        intensity={5.6}
         color={"#ef4444"}
       />
 
@@ -242,27 +242,47 @@ export default function Character() {
 
   return (
 
-    <div id = "spiderman-layer" className="fixed inset-0 -z-10 pointer-events-none">
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        /* Add subtle text shadows to make text pop over 3D background */
+        #home p, #about p, #services p, #showcase p, #reviews p, #project p, footer p,
+        #home h2, #about h2, #services h2, #showcase h2, #reviews h2, #project h2, footer h2,
+        #home h3, #about h3, #services h3, #showcase h3, #reviews h3, #project h3, footer h3,
+        #home h4, #about h4, #services h4, #showcase h4, #reviews h4, #project h4, footer h4,
+        #home label, #project label {
+          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+        }
 
-      <Canvas
-        camera={{
-          position: [0, 0, 15],
-          fov: 45,
-        }}
-        gl={{
-          alpha: true,
-          antialias: true,
-        }}
-        style={{
-          background: "transparent",
-        }}
-      >
+        /* Increase paragraph body opacity where appropriate */
+        p.text-white\\/70, 
+        p.text-white\\/65, 
+        p.text-white\\/60,
+        p.text-white\\/75 {
+          color: rgba(255, 255, 255, 0.88) !important;
+        }
+      ` }} />
+      <div id = "spiderman-layer" className="fixed inset-0 -z-10 pointer-events-none">
 
-        <Scene />
+        <Canvas
+          camera={{
+            position: [0, 0, 15],
+            fov: 45,
+          }}
+          gl={{
+            alpha: true,
+            antialias: true,
+          }}
+          style={{
+            background: "transparent",
+          }}
+        >
 
-      </Canvas>
+          <Scene />
 
-    </div>
+        </Canvas>
+
+      </div>
+    </>
 
   );
 

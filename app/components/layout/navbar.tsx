@@ -1,7 +1,10 @@
 "use client";
 import { useScene } from "@/app/Context/SceneContext";
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { Libre_Baskerville } from "next/font/google";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400"],
@@ -12,8 +15,16 @@ export default function Navbar() {
 
   const { setScene } = useScene();
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const goToSection = (id: string) => {
+
+    if (pathname !== "/") {
+      setMenuOpen(false);
+      router.push(id === "home" ? "/" : `/#${id}`);
+      return;
+    }
 
     const section =
       document.getElementById(id);
@@ -42,35 +53,43 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
 
           <button
-            onClick={() =>
-              window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-              })
-            }
-            className="text-xl sm:text-2xl font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white hover:scale-105 transition"
-            style={{ cursor: "pointer" }}
-          > 
-          <span className = "text-xl sm:text-2xl font-black text-white">
-            thuk
-          </span>
-          
-          <span className = "mx-1 mb-1 h-3 w-3 rounded-full bg-orange-500" />
-          <span className ="font-baskerville "
-              >
-            .studio
-          </span>
-      
-            
-         </button>
+            onClick={() => {
+              if (pathname === "/") {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              } else {
+                router.push("/");
+              }
+            }}
+            className="cursor-pointer transition hover:scale-105"
+          >
+
+            <Image
+              src="/assets/logo.png"
+              alt="THUK Studio"
+              width={105}
+              height={55}
+              priority
+              className="w-[105px] sm:w-[120px] lg:w-[130px] h-auto"
+            />
+
+          </button>
 
           <button
             onClick={() => {setMenuOpen(true); setScene("menu");}}
-            className="text-lg sm:text-2xl font-black uppercase tracking-[0.2em] text-white hover:scale-105 transition "
+            className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] hover:scale-105 transition p-2"
             style={{ cursor: "pointer" }}
+            aria-label="Open Menu"
           >
 
-            MENU
+            <span className="hidden lg:block text-lg sm:text-2xl font-black uppercase tracking-[0.2em]">
+              MENU
+            </span>
+            <span className="block lg:hidden">
+              <Menu className="h-7 w-7 sm:h-8 sm:w-8" />
+            </span>
 
           </button>
 
@@ -133,18 +152,24 @@ export default function Navbar() {
             sm:right-10
             sm:top-10
             z-50
-            text-2xl
-            font-black
             text-white
             cursor-pointer
             hover:scale-105 transition
-          ">
+            p-2
+          "
+            aria-label="Close Menu"
+          >
 
-            CLOSE
+            <span className="hidden lg:block text-2xl font-black">
+              CLOSE
+            </span>
+            <span className="block lg:hidden">
+              <X className="h-7 w-7 sm:h-8 sm:w-8" />
+            </span>
 
           </button>
 
-          <div className="relative z-10 flex h-full flex-col justify-center gap-4 sm:gap-6 pl-8 sm:pl-16 lg:pl-24 font-baskerville">
+          <div className="relative z-10 flex h-full flex-col justify-center gap-4 sm:gap-6 pl-8 sm:pl-16 lg:pl-24 font-poppins">
 
             <button
               onClick={() => goToSection("home")}
@@ -192,6 +217,17 @@ export default function Navbar() {
               style={{ cursor: "pointer" }}
             >
               START A PROJECT
+            </button>
+
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                router.push("/career");
+              }}
+              className="text-left text-3xl sm:text-4xl lg:text-5xl font-black text-white hover:text-orange-400 hover:scale-105 transition"
+              style={{ cursor: "pointer" }}
+            >
+              CAREER
             </button>
             
             <button
