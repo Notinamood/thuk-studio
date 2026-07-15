@@ -48,7 +48,7 @@ export default function Navbar() {
     <>
 
       {/* TOP BAR */}
-      <nav className="fixed top-0 left-0 z-100 w-full px-4 py-4 sm:px-8 sm:py-8">
+      <nav className="fixed top-0 left-0 z-100 w-full px-4 pt-0 pb-2 sm:px-8 sm:pt-0 sm:pb-4">
 
         <div className="flex items-center justify-between">
 
@@ -67,13 +67,24 @@ export default function Navbar() {
           >
 
             <Image
-              src="/assets/logo.png"
-              alt="THUK Studio"
-              width={105}
-              height={55}
-              priority
-              className="w-[105px] sm:w-[120px] lg:w-[130px] h-auto"
-            />
+             src="/assets/logoT.png"
+  alt="THUK Studio"
+  width={160}
+  height={83}
+  priority
+  className="
+    w-[145px]
+    sm:w-[170px]
+    lg:w-[195px]
+    -mt-5
+    sm:-mt-7
+    lg:-mt-8
+    object-contain
+    transition-transform
+    duration-300
+    hover:scale-105
+  "
+/>
 
           </button>
 

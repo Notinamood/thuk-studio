@@ -30,7 +30,7 @@ export default function Footer() {
 
             <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl">
   <Image
-    src="/assets/mark.png"
+    src="/assets/icon.jpeg"
     alt="THUK Studio"
     width={64}
     height={64}
