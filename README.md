@@ -114,7 +114,7 @@ http://localhost:3000
 
 ---
 
-## Live Demo
+## Live Website
 
 https://www.thuk.studio
 
